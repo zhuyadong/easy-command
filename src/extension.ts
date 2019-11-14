@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
 			if (typeof args == 'object') {
 				args = args.join('\n');
 			}
-			Function(args)();
+			eval(args);
 		}
 	});
 

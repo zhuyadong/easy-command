@@ -1,6 +1,6 @@
 {
 	"name": "easy-command",
-	"displayName": "Easy Command",
+	"displayName": "easy-command",
 	"description": "Run extention code in command.",
 	"version": "0.0.1",
 	"engines": {
@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"*"
 	],
-	"main": "./out/extension.js",
+	"main": "./out/extension",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.easy_command",
+				"title": "Easy Command"
 			}
 		]
 	},
